@@ -1,0 +1,109 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blower Selection</title>
+	<!-- <script src = "input.js"></script> -->
+</head>
+<body>
+	<h2>Ambienet Condition</h2>
+	<form>	
+		<p><label>Ambienet Temperature:
+			 <input id="Ta" type="number">
+			 <select id="Ta_unit">
+				<option selected>Degree Celsius</option>
+				<option>Degree Fahrenheit</option>
+			 </select>
+			</label>
+		</p>
+
+		<p> <label for="Pa">Pressure Avaliable</label>
+			<input type="radio" name="hp" id="Pa" checked /> &nbsp;&nbsp;&nbsp;
+			<label for="Ha">Elevation Avaliable</label>
+			<input type="radio" name="hp" id="Ha" />
+		</p>
+
+		<p><label id="label_hp" for="Pa/H">Ambienet Pressure:</label>
+			<input id="Pa/H" type="number">
+			<select id="Pa/H_unit">
+			   <option selected>kPa</option>
+			   <option>PSI</option>
+			   <option>inHg</option>
+			   <option>bar</option>
+			   <option>inH2O</option>
+			   <option>atm</option>
+			</select>
+		   
+	   </p>
+	</form>
+
+
+
+	<h2>Inlet Condition</h2>
+	<form>	
+		<p><input type="checkbox" id="same" value="1"> Same as Ambienet Condition </p>
+		<p><label>Inlet Temperature:
+			 <input id="Ts" type="number">
+			 <select id="Ts_unit">
+				<option selected>Degree Celsius</option>
+				<option>Degree Fahrenheit</option>
+			 </select>
+			</label>
+		</p>
+		<p><label for="Ps">Inlet Pressure:</label>
+			<input id="Ps" type="number">
+			<select id="Ps_unit">
+			   <option selected>kPa</option>
+			   <option>PSI</option>
+			   <option>inHg</option>
+			   <option>bar</option>
+			   <option>inH2O</option>
+			   <option>atm</option>
+			</select>
+		   
+	   </p>
+	</form>
+
+
+
+
+
+	<h2>Operating Condition</h2>
+	<form>	
+		<p><label for="Pd">Discharge Pressure:</label>
+			<input id="Pd" type="number">
+			<select id="Pd_unit">
+			   <option selected>kPa</option>
+			   <option>PSI</option>
+			   <option>inHg</option>
+			   <option>bar</option>
+			   <option>inH2O</option>
+			   <option>atm</option>
+			</select>
+		   
+	   </p>
+	   
+	   <p> <label for="Qs_radio">Inlet Volume</label>
+		<input type="radio" name="volume_type" id="Qs_radio" checked /> &nbsp;&nbsp;&nbsp;
+
+		<label for="Qstr_radio">Standard Volume</label>
+		<input type="radio" name="volume_type" id="Qstr_radio" /> &nbsp;&nbsp;&nbsp;
+		
+		<label for="Qn_radio">Normal Volume</label>
+		<input type="radio" name="volume_type" id="Qn_radio" /> &nbsp;&nbsp;&nbsp;
+	    </p>
+
+		<p><label id="label_volume" for="volume">Inlet Volumn:</label>
+			<input id="volume" type="number">
+			<select id="Volume_unit">
+			   <option selected>m3/min</option>
+			   <option>m3/h</option>
+
+			</select>
+		   
+	   </p>
+
+
+	</form>
+	
+</body>
+</html>
